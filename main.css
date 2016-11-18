@@ -39,59 +39,69 @@ section {
   background: white;
 }
 
+.selected {
+  transform: translate(0,0) !important;
+  animation: blur .8s;
+}
+
 .top {
   z-index: 1 !important;
 }
 
-.selected {
-  transform: translate(0,0) !important;
-  animation: blur .8s;
-  box
-}
-
-.position-tl.section-tl {
-  background: red;
+.position-tl {
   transform: translate(-100%,-100%);
 }
-
-.position-tm.section-tm {
-  background: blue;
-  transform: translate(0,-100%);
+.position-tm {
+    transform: translate(0,-100%);
 }
-
-.position-tr.section-tr {
-  background: green;
+.position-tr {
   transform: translate(100%,-100%);
 }
-
-.position-ml.section-ml {
-  background: red;
+.position-ml {
   transform: translate(-100%,0);
 }
-
-.position-mm.section-mm {
-  background: blue;
-  transform: translate(0,0);
-}
-
-.position-mr.section-mr {
-  background: green;
-  transform: translate(100%,0);
-}
-
-.position-bl.section-bl {
-  background: red;
-  transform: translate(-100%,100%);
-}
-
-.position-bm.section-bm {
-  background: blue;
+.position-mm {
   transform: translate(0,100%);
 }
-
-.position-br.section-br {
-  background: green;
+.position-mr{
+  transform: translate(100%,0);
+}
+.position-bl {
+  transform: translate(-100%,100%);
+}
+.position-bm {
+  transform: translate(0,100%);
+}
+.position-br {
   transform: translate(100%,100%);
+}
+
+.section-tl {
+  background: red;
+}
+.section-tm {
+  background: blue;
+}
+.section-tr {
+  background: green;
+}
+.section-ml {
+  background: red;
+}
+.section-mm {
+  background: blue;
+}
+.section-mr {
+  background: green;
+}
+.section-bl {
+  background: red;
+}
+.section-bm {
+  background: blue;
+}
+.section-br {
+  background: green;
 }
 
 

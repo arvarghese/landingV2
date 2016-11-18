@@ -6,9 +6,14 @@ var AV = {
 		$('nav>ul>li').click(AV.loadSection);
 	},
 	loadSection: function(){
-		$('section.selected').removeClass('selected');
-		var targetSection = $(this).attr('target-section');
-		$(targetSection).toggleClass('selected');
+		var newTarget = '.section-'+$(this).attr('target-section');
+		var oldTarget = '.section-'+$('section.selected').attr('initial');		
+		$(oldTarget).removeClass('selected');
+		setTimeout(function(){
+			$(oldTarget).removeClass('top');
+			$(oldTarget).addClass('top');
+		},1000);
+		$(newTarget).addClass('selected');
 	}
 }
 
