@@ -36,7 +36,6 @@ section {
   width: 100%;
   transform-origin: center;
   transition: .8s cubic-bezier(0.83, -0.03, 0.54, 0.99);
-  /*border: 1px solid white;*/
   background: white;
 }
 
@@ -46,47 +45,55 @@ section {
 
 .selected {
   transform: translate(0,0) !important;
-}
-
-.position-t.section-t {
-  background: darkred;
-  transform: translate(0,-100%);
-}
-
-.position-b.section-b {
-  background: rgba(0,0,0,.2);
-  transform: translate(0, 100%);
-}
-
-.position-r.section-r {
-  background: rgba(0,0,0,.3);
-  transform: translate(100%,0);
-}
-
-.position-l.section-l {
-  background: rgba(0,0,0,.5);
-  transform: translate(-100%,0);
-}
-
-.position-bl.section-bl {
-  background: rgba(0,0,0,.6);
-  transform: translate(-100%,100%);
-}
-
-.position-br.section-br {
-  background: rgba(0,0,0,.7);
-  transform: translate(100%,100%);
+  animation: blur .8s;
+  box
 }
 
 .position-tl.section-tl {
-  background: rgba(0,0,0,.8);
+  background: red;
   transform: translate(-100%,-100%);
 }
 
+.position-tm.section-tm {
+  background: blue;
+  transform: translate(0,-100%);
+}
+
 .position-tr.section-tr {
-  background: rgba(0,0,0,.9);
+  background: green;
   transform: translate(100%,-100%);
 }
+
+.position-ml.section-ml {
+  background: red;
+  transform: translate(-100%,0);
+}
+
+.position-mm.section-mm {
+  background: blue;
+  transform: translate(0,0);
+}
+
+.position-mr.section-mr {
+  background: green;
+  transform: translate(100%,0);
+}
+
+.position-bl.section-bl {
+  background: red;
+  transform: translate(-100%,100%);
+}
+
+.position-bm.section-bm {
+  background: blue;
+  transform: translate(0,100%);
+}
+
+.position-br.section-br {
+  background: green;
+  transform: translate(100%,100%);
+}
+
 
 .section-content {
   position: absolute;
@@ -96,7 +103,7 @@ section {
   top: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-}
+} 
 
 nav>ul>li {
   cursor: pointer;
@@ -109,4 +116,12 @@ nav {
   left: 0;
   bottom: 0;
   z-index: 10;
+}
+
+@keyframes blur {
+  100% { 
+    filter: blur(.1em);
+    text-shadow: -5px 0 5px rgba(255,255,255,1);
+    box-shadow: 5px 0 10px 5px rgba(0,0,0,0.5);    
+  }
 }
