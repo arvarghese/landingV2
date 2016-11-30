@@ -1,6 +1,7 @@
 var AV = {
 	initialize: function(){
 		AV.loadEvents();
+		new WOW().init();
 	},
 	loadEvents: function(){
 		$(window).scroll(function(){
