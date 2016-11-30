@@ -76,7 +76,7 @@ nav.sticky {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  filter: blur(0.3em);
+  /*filter: blur(0.3em);*/
 }
 
 #about>.bg-overlay {
@@ -234,15 +234,14 @@ nav {
   height: 100%;
   overflow-y: scroll;
   width: 100%;
-  background: rgba(255,255,255,1);
+  background: rgba(0,0,0,.95);
   transition: .3s ease-in-out;
   z-index: 4;
 }
 
 nav.nav-open {
   visibility: visible;
-  opacity: 1;  
-  background: rgba(0,0,0,.8);
+  opacity: 1;    
 }
 
 .nav-menu-grid {
