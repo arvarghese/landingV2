@@ -190,6 +190,117 @@ footer {
   width: 100%;
 }
 
+.nav-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  font-size: 2em;
+  padding: .35em .35em;
+  cursor: pointer;
+  opacity: .6;
+}
+
+.nav-btn.nav-close {
+  opacity: .9;
+}
+
+.nav-icon>span {
+  display: block;
+  height: .2em;
+  width: 1.5em;
+  background-color: white;
+  margin: 0.3em;
+  transition: .3s ease-in-out;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+}
+
+.nav-close>.nav-icon>.first {
+  transform: rotate(-45deg) translate(0, .05em);
+  transform-origin: right;
+}
+
+.nav-close>.nav-icon>.second {
+  opacity: 0;
+}
+
+.nav-close>.nav-icon>.third {
+  transform: rotate(45deg) translate(-.3em,-1em);
+  transform-origin: left;
+}
+
+nav {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  padding: 0.2em .4em;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  background: rgba(255,255,255,1);
+  transition: .3s ease-in-out;
+  z-index: 4;
+}
+
+nav.nav-open {
+  visibility: visible;
+  opacity: 1;  
+  background: rgba(0,0,0,.8);
+}
+
+.nav-menu-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 3em;
+}
+
+.nav-menu-item {
+  align-self: stretch;
+  overflow: hidden;
+  text-align: center;
+  transition: .3s ease-in-out;
+  position: relative;
+  width: 20em;
+  height: 20em;
+  margin: .2em;
+  box-shadow: .1em .1em .2em 0em rgba(0,0,0,.3);
+}
+
+.nav-menu-item>.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: .3em;
+  font-weight: 400;
+}
+
+.nav-menu-item:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid rgba(255,255,255,.3);
+  z-index: -1;
+}
+
+.nav-menu-item>.content {
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+
+.nav-menu-item:hover .content{
+  opacity: 1;
+  font-size: 1.1em;
+  letter-spacing: .5em;
+}
+
 @media (max-width:568px) {
   #about>.content {      
     top: 4em;
