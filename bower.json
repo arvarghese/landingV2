@@ -16,9 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "3.3.6",
-    "font-awesome": "4.6.3",
-    "jquery": "^3.1.1",
-    "Matter": "matter-js#^0.10.0"
+    "font-awesome": "4.7.0",
+    "jquery": "^3.1.1"
   },
   "resolutions": {
     "jquery": "1.9.1 - 2"
