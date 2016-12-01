@@ -98,8 +98,6 @@ nav.sticky {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  opacity: .8;
-  transition: 0;
 }
 
 #about>.bg-pattern {
