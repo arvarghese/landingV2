@@ -1,0 +1,11 @@
+{
+    "files": [
+        "assets/js/landing.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es5",
+        "sourceMap": true
+    }
+}
