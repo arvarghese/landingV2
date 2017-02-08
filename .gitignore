@@ -47,7 +47,6 @@ nb-configuration.xml
 ## Bower Files
 .bower-*/
 bower_components
-assets/lib
 
 ### ANGULAR ###
 ## Angular CLI
